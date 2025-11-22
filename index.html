@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+    <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
 	<title>"Portfolio"</title>
-	<link rel="stylesheet" href="main.css"/>
-</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<style>
+    /* 1. Correctly set the whole page background to #141627 and text to white */
+    body {
+        background-color: #141627; 
+        color: white; 
+    }
     
+    /* Positions the entire container to the bottom-right */
+    .whatsapp-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        display: flex; 
+        align-items: center; 
+    }
+
+    /* 2. Set the WhatsApp icon's background color back to green (#25D366) */
+    .fab.fa-whatsapp {
+        color: white; 
+        background-color: #25D366; /* WhatsApp Green */
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 40px; 
+        line-height: 1; 
+    }
+    
+    /* Styles the "Chat with me!" text */
+    .whatsapp-tooltip {
+        background-color: #555;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 4px;
+        margin-right: 10px;
+        order: -1; 
+        font-size: 16px;
+    }
+</style>
+
+
+	
+
+
+	
+</head>
+
     
 
 <body> 
@@ -40,14 +85,14 @@
 	   <li>project management</li>
 	   
 	   </ul>
-	<div class="whatsapp-container">
-  <a href="https://wa.me/8801758308742" target="_blank" title="Chat on WhatsApp">
-    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/032025/logo_whatsapp_business_mar2025_pd-01.png?rvPHzEp8gwRY9IOy3nndlxbL44L9xhAt&itok=WGxUKUUJ" alt="WhatsApp Icon" class="whatsapp-icon"width="39" height="39" style='margin-top: 40px;margin-left: 10px;border-radius: 50%;'>
-	 
-  </a>
-  <span class="whatsapp-tooltip">Chat with me!</span>
-</div>
+	   
+    <div class="whatsapp-container">
+		<a href="https://wa.me/8801758308742" target="_blank" title="Chat on WhatsApp"> <i class="fab fa-whatsapp"></i> </a> 
+     
+      <span class="whatsapp-tooltip">Chat with me!</span>
+    </div>
+</body>
 
-	   </a>
+	  
 </body>
 </html>
